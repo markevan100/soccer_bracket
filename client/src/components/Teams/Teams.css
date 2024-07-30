@@ -1,0 +1,27 @@
+.teams {
+  padding: 20px;
+}
+
+.team-group {
+  margin-bottom: 20px;
+}
+
+.team-group h2 {
+  margin-bottom: 10px;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.team-flag {
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.team-name {
+  font-size: 16px;
+}

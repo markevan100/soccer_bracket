@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_07_27_125012) do
+ActiveRecord::Schema[7.0].define(version: 2024_07_30_152132) do
   create_table "group_picks", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "group_id", null: false
@@ -49,6 +49,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_07_27_125012) do
     t.string "flag_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "country_code"
     t.index ["group_id"], name: "index_teams_on_group_id"
   end
 

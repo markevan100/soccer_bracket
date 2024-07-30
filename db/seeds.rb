@@ -5,22 +5,22 @@ group_c = Group.create(name: "Group C")
 
 # Create Teams
 teams = {
-  "France" => { group: group_a },
-  "Canada" => { group: group_a },
-  "Colombia" => { group: group_a },
-  "New Zealand" => { group: group_a },
-  "Germany" => { group: group_b },
-  "United States" => { group: group_b },
-  "Australia" => { group: group_b },
-  "Zambia" => { group: group_b },
-  "Spain" => { group: group_c },
-  "Brazil" => { group: group_c },
-  "Japan" => { group: group_c },
-  "Nigeria" => { group: group_c }
+  "France" => { group: group_a, country_code: "FR" },
+  "Canada" => { group: group_a, country_code: "CA" },
+  "Colombia" => { group: group_a, country_code: "CO" },
+  "New Zealand" => { group: group_a, country_code: "NZ" },
+  "Germany" => { group: group_b, country_code: "DE" },
+  "United States" => { group: group_b, country_code: "US" },
+  "Australia" => { group: group_b, country_code: "AU" },
+  "Zambia" => { group: group_b, country_code: "ZM" },
+  "Spain" => { group: group_c, country_code: "ES" },
+  "Brazil" => { group: group_c, country_code: "BR" },
+  "Japan" => { group: group_c, country_code: "JP" },
+  "Nigeria" => { group: group_c, country_code: "NG" }
 }
 
 teams.each do |name, attrs|
-  Team.create(country: name, group: attrs[:group])
+  Team.create(country: name, group: attrs[:group], country_code: attrs[:country_code])
 end
 
 # Create Matches
