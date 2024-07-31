@@ -48,6 +48,30 @@ Match.create(
   team_a: Team.find_by(country: "Brazil"), team_b: Team.find_by(country: "Nigeria"),
   team_a_goals: 1, team_b_goals: 0, team_a_yellow_cards: 1, team_b_yellow_cards: 0, team_a_red_cards: 0, team_b_red_cards: 0, group: group_c
 )
+Match.create(
+  team_a: Team.find_by(country: "Canada"), team_b: Team.find_by(country: "France"),
+  team_a_goals: 2, team_b_goals: 1, team_a_yellow_cards: 0, team_b_yellow_cards: 0, team_a_red_cards: 0, team_b_red_cards: 0, group: group_a
+)
+Match.create(
+  team_a: Team.find_by(country: "United States"), team_b: Team.find_by(country: "Germany"),
+  team_a_goals: 4, team_b_goals: 1, team_a_yellow_cards: 0, team_b_yellow_cards: 0, team_a_red_cards: 0, team_b_red_cards: 0, group: group_b
+)
+Match.create(
+  team_a: Team.find_by(country: "Australia"), team_b: Team.find_by(country: "Zambia"),
+  team_a_goals: 6, team_b_goals: 5, team_a_yellow_cards: 0, team_b_yellow_cards: 1, team_a_red_cards: 0, team_b_red_cards: 0, group: group_b
+)
+Match.create(
+  team_a: Team.find_by(country: "Spain"), team_b: Team.find_by(country: "Nigeria"),
+  team_a_goals: 1, team_b_goals: 0, team_a_yellow_cards: 0, team_b_yellow_cards: 0, team_a_red_cards: 0, team_b_red_cards: 0, group: group_c
+)
+Match.create(
+  team_a: Team.find_by(country: "Japan"), team_b: Team.find_by(country: "Brazil"),
+  team_a_goals: 2, team_b_goals: 1, team_a_yellow_cards: 0, team_b_yellow_cards: 0, team_a_red_cards: 0, team_b_red_cards: 0, group: group_c
+)
+Match.create(
+  team_a: Team.find_by(country: "Colombia"), team_b: Team.find_by(country: "New Zealand"),
+  team_a_goals: 2, team_b_goals: 0, team_a_yellow_cards: 0, team_b_yellow_cards: 0, team_a_red_cards: 0, team_b_red_cards: 0, group: group_a
+)
 
 # Create Users
 user1 = User.create(email: "user1@example.com", password: "password")

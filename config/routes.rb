@@ -11,6 +11,8 @@ Rails.application.routes.draw do
       resources :matches, only: [:index, :show]
       resources :group_picks, only: [:create, :update, :destroy]
       resources :user_picks, only: [:create, :update, :destroy]
+
+      get 'group_standings', to: 'group_standings#index'
     end
   end
 end

@@ -21,7 +21,10 @@ class GroupStandingsCalculator
       goal_difference = goals_for - goals_against
 
       {
-        team: team,
+        id: team.id,
+        country: team.country,
+        group_id: team.group_id,
+        country_code: team.country_code,
         points: points,
         goals_for: goals_for,
         goals_against: goals_against,

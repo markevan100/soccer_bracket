@@ -10,6 +10,7 @@ const Navbar = () => {
         <li><Link to="/teams">Teams</Link></li>
         <li><Link to="/matches">Matches</Link></li>
         <li><Link to="/group_picks">Group Picks</Link></li>
+        <li><Link to="/standings">Standings</Link></li>
       </ul>
     </nav>
   );

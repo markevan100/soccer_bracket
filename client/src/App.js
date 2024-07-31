@@ -5,6 +5,7 @@ import Teams from './components/Teams/Teams';
 import Matches from './components/Matches';
 import GroupPicks from './components/GroupPicks';
 import UserPicks from './components/UserPicks';
+import Standings from './components/Standings/Standings';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/matches" element={<Matches />} />
           <Route path="/group-picks" element={<GroupPicks />} />
           <Route path="/user-picks" element={<UserPicks />} />
+          <Route path="/standings" element={<Standings />} />
         </Routes>
       </div>
     </Router>
